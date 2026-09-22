@@ -1,6 +1,6 @@
 package org.example.lab1;
 
-public class removeElement {
+public class RemoveElement {
     public int removeElementInplace(int[] arr, int val) {
         int k = 0;
 
