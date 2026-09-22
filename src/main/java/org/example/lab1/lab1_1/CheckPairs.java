@@ -1,4 +1,4 @@
-package org.example.lab1;
+package org.example.lab1.lab1_1;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;

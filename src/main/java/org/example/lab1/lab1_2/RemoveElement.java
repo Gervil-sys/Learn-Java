@@ -1,4 +1,4 @@
-package org.example.lab1;
+package org.example.lab1.lab1_2;
 
 public class RemoveElement {
     public int removeElementInplace(int[] arr, int val) {
