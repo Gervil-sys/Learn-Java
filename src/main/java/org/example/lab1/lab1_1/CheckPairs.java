@@ -8,7 +8,7 @@ public class CheckPairs {
     public static boolean isBalabce(String str){
         //Создания Стэка
         Stack<Character> stack = new Stack<>();
-        //Создание Мап и добавление скобок
+           //Создание Мап и добавление скобок
         Map<Character, Character> pairs = new HashMap<>();
         pairs.put(')', '(');
         pairs.put(']', '[');
