@@ -17,31 +17,31 @@ public class MergeSort implements Sorting<Integer> {
 
     }
     private  void merge(List<Integer> nums, int start, int middle, int end) {
-        List<Integer> result = new ArrayList<>();
+        List<Integer> output = new ArrayList<>();
 
         int right = middle + 1;
         int left = start;
 
         while (left <= middle && right <= end) {
             if (nums.get(left) <= nums.get(right)) {
-                result.add(nums.get(left));
+                output.add(nums.get(left));
             }
             else {
-                result.add(nums.get(right));
+                output.add(nums.get(right));
                 right++;
             }
         }
         while (left <= middle) {
-            result.add(nums.get(left));
+            output.add(nums.get(left));
             left++;
         }
         while (right <= end) {
-            result.add(nums.get(right));
+           output.add(nums.get(right));
             right++;
         }
 
-        for (int index = 0; index <= result.size(); index++){
-            nums.set(start + 1, result.get(index));
+        for (int index = 0; index <= output.size(); index++){
+            nums.set(start + 1, output.get(index));
         }
 
     }
