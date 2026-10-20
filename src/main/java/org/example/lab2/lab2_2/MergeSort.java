@@ -24,6 +24,7 @@ public class MergeSort implements Sorting<Integer> {
         while (left <= middle && right <= end) {
             if (nums.get(left) <= nums.get(right)) {
                 output.add(nums.get(left));
+                left++;
             }
             else {
                 output.add(nums.get(right));

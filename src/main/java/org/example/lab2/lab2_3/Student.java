@@ -1,6 +1,6 @@
 package org.example.lab2.lab2_3;
 
-public class Student implements Comparable<Student> {
+public class Student {
     private final String name;
     private final int age;
 
@@ -10,10 +10,12 @@ public class Student implements Comparable<Student> {
     }
 
     public String getName() {
+
         return name;
     }
 
     public int getAge() {
+
         return age;
     }
 }

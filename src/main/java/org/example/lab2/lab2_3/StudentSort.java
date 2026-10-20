@@ -1,7 +1,6 @@
 package org.example.lab2.lab2_3;
 import org.example.lab2.lab2_1.Sorting;
 import org.example.lab2.lab2_3.Student;
-import org.example.lab2.lab2_1.Sorting;
 import java.util.List;
 
 public class StudentSort implements Sorting<Student> {
@@ -13,7 +12,6 @@ public class StudentSort implements Sorting<Student> {
         this.students = students;
         this.byAge = byAge;
     }
-
     @Override
     public void sort(List<Student> list) {
         if (list != students) {
@@ -28,7 +26,6 @@ public class StudentSort implements Sorting<Student> {
         }
     }
 
-    // === СТАБИЛЬНАЯ СОРТИРОВКА (как в Java 8+) ===
     private void stableSort(List<Student> list, java.util.Comparator<Student> comparator) {
         int n = list.size();
         Integer[] indices = new Integer[n];
