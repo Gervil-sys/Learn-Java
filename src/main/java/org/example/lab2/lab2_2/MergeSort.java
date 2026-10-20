@@ -12,7 +12,6 @@ public class MergeSort implements Sorting<Integer> {
 
         slice(nums, start, middle);
         slice(nums, middle + 1, end);
-
         merge(nums, start, middle, end);
 
     }
